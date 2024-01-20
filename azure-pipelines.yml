@@ -1,4 +1,11 @@
 # Python Django
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(5d7377f5-2273-42cc-b1b5-bcabc462210e)'
+    appType: 'webApp'
+    WebAppName: '123danleo'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Test a Django project on multiple versions of Python.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
